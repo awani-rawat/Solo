@@ -1,12 +1,16 @@
-#main{
-    color: darkorange;
-    font-size: 20px;
-    width: 250px;
-    height: 50px;
-    
+.col-bg-red{
+    background-color: red
+}
+.col-bg-pink{
+    background-color: pink
+}
+.col-bg-blue{
+    background-color: blue
+}
+.col-bg-yellow{
+    background-color: yellow
 }
 
-#parent{
-    justify-content: center;
-    align-items: center;
+h1{
+    font-family: "Raleway";
 }
