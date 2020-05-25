@@ -1,16 +1,40 @@
-.col-bg-red{
-    background-color: red
-}
-.col-bg-pink{
-    background-color: pink
-}
-.col-bg-blue{
-    background-color: blue
-}
-.col-bg-yellow{
-    background-color: yellow
+/*
+moon yellow :: #f4c613
+grey        :: #212226
+white smoke :: #646464
+white       :: #fff
+black       :: #000
+*/
+
+#preloader{
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 100;
 }
 
-h1{
-    font-family: "Raleway";
+#status{
+    background-image: url(../img/preloader/preloader.gif);
+    background-repeat: no-repeat;
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -35px;
+    margin-left: -35px;
+}
+
+#home-overlay{
+    background-color: #212226;
+    z-index: 1;
+    top: 0;
+    bottom:0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    opacity: 75%;
 }

@@ -1,41 +1,38 @@
 <!DOCTYPE html>
 <html>
-        <head>
-           <!--meta tags for mobile optimization-->
-            <meta charset="utf-8">
-            <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-            <!--initial-scale sets the initial zoom to 1-->
-            <meta name="viewport" content="width=device-width,initial-scale=1">
-            <title>Sample Website</title>
-            <!--shortcut icon and icon in rel attribute both display the icon beside the title-->
-            <link rel="icon" href="img/favicon/favicon.ico">
-            <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700">
-            <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700">
-            <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
-            <link rel="stylesheet" href="css/bootstrap.css">
-            <link rel="stylesheet" href="css/style.css">
-        </head>
-        <body>
-            <h1>Welcome to Solo</h1>
-            <i class="fa fa-laptop fa-5x">Laptop</i>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-3 col-bg-red">
-                        Content 1
-                    </div>
-                    <div class="col-md-3 col-bg-pink">
-                        Content 2
-                    </div>
-                    <div class="col-md-3 col-bg-blue">
-                        Content 3
-                    </div>
-                    <div class="col-md-3 col-bg-yellow">
-                        Content 4
-                    </div>
-                </div>
-            </div>
-            <script src="js/jquery-3.5.1.js"></script>
-            <script src="js/bootstrap.js"></script>
-            <script src="js/script.js"></script>
-        </body>
+
+<head>
+    <!--meta tags for mobile optimization-->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <!--initial-scale sets the initial zoom to 1-->
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Sample Website</title>
+    <!--shortcut icon and icon in rel attribute both display the icon beside the title-->
+    <link rel="icon" href="img/favicon/favicon.ico">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700">
+    <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="preloader">
+        <div id="status">&nbsp;</div>
+    </div>
+    <section id="home">
+        <video id="home-bg-video" poster="video/solo.jpg" autoplay loop muted>
+            <source src="video/solo.mp4" type="video/mp4">
+            <source src="video/solo.ogv" type="video/ogg">
+            <source src="video/solo.webm" type="video/webm">
+        </video>
+        <div id="home-overlay"></div>
+    </section>
+    
+    <script src="js/jquery-3.5.1.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
 </html>
