@@ -5,27 +5,95 @@ white smoke :: #646464
 white       :: #fff
 black       :: #000
 */
-
-html,body{
+/*
+Generic
+*/
+html,
+body {
     height: 100%;
 }
-body{
+
+body {
     color: #212226;
 }
-h1,h2,h3,h4,h5,h6{
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: "Raleway", sans-serif
 }
-p{
+
+p {
     font-family: "Open Sans", sans-serif;
     font-size: 13px;
     font-weight: 400;
     line-height: 24px;
 }
-section{
+
+section {
     background-color: #fff;
     overflow: hidden;
 }
-#preloader{
+
+.content-box-lg {
+    padding: 120px 0;
+}
+
+.vertical-heading h5 {
+    color: #f4c613;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    word-spacing: 9px;
+    display: inline-block;
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    position: relative;
+    top: 60px;
+    left: -63px;
+}
+
+.vertical-heading h2 {
+    margin: 0 0 0 35px;
+    font-size: 42px;
+    font-weight: 100;
+    line-height: 45px;
+}
+
+.btn-general {
+    font-family: "Raleway", sans-serif;
+    border-radius: 28px;
+    font-size: 13px;
+    text-transform: uppercase;
+    margin: 0 6px;
+    padding: 12px 46px 12px 46px;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+}
+
+.btn-home {
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+.btn-home:hover,
+.btn-home:focus {
+    color: #fff;
+    background-color: #f4c613;
+    border: 1px solid #f4c613;
+}
+
+.content-box-md {
+    padding: 100px 0;
+}
+
+/*
+Others
+*/
+#preloader {
     background-color: #fff;
     position: fixed;
     top: 0;
@@ -34,7 +102,8 @@ section{
     left: 0;
     z-index: 100;
 }
-#status{
+
+#status {
     background-image: url(../img/preloader/preloader.gif);
     background-repeat: no-repeat;
     width: 70px;
@@ -45,8 +114,9 @@ section{
     margin-top: -35px;
     margin-left: -35px;
 }
-#home-overlay{
-    background-color: rgba(0,0,0,0.8);
+
+#home-overlay {
+    background-color: rgba(0, 0, 0, 0.8);
     z-index: -1;
     top: 0;
     left: 0;
@@ -54,7 +124,8 @@ section{
     width: 100%;
     height: 100%;
 }
-#home-bg-video{
+
+#home-bg-video {
     position: fixed;
     top: 0;
     left: 0;
@@ -66,20 +137,24 @@ section{
     background-size: cover;
     z-index: -1;
 }
-#home{
+
+#home {
     background: none;
     height: 100%;
 }
-#home-content{
+
+#home-content {
     width: 100%;
     height: 100%;
     display: table;
 }
-#home-content-inner{
+
+#home-content-inner {
     display: table-cell;
     vertical-align: middle;
 }
-#home-heading h1{
+
+#home-heading h1 {
     color: #fff;
     font-size: 65px;
     font-weight: 100;
@@ -87,35 +162,20 @@ section{
     margin: 0;
     display: inline-block;
 }
-#home-heading h1 span{
+
+#home-heading h1 span {
     color: #f4c613;
     font-weight: 500;
 }
-#home-text p{
+
+#home-text p {
     color: #fff;
     font-size: 17px;
     font-weight: 100;
     margin: 8px 0px 30px 0px;
 }
-.btn-general{
-    font-family: "Raleway", sans-serif;
-    border-radius: 28px;
-    font-size: 13px;
-    text-transform: uppercase;
-    margin: 0 6px;
-    padding: 12px 46px 12px 46px;
-    -webkit-transition: all .5s;transition: all .5s;
-}
-.btn-home{
-    color: #fff;
-    border: 1px solid #fff;
-}
-.btn-home:hover, .btn-home:focus{
-    color: #fff;
-    background-color: #f4c613;
-    border: 1px solid #f4c613;
-}
-#arrow-down{
+
+#arrow-down {
     position: absolute;
     left: 50%;
     bottom: 20px;
@@ -128,6 +188,77 @@ section{
     z-index: 1;
 }
 
-#arrow-down:hover, #arrow-down:focus{
+#arrow-down:hover,
+#arrow-down:focus {
     color: #f4c613;
+}
+
+#about-right p:first-child {
+    margin-bottom: 30px;
+}
+
+#about-bottom {
+    margin-top: 60px;
+}
+
+#about-bottom img {
+    margin: 0 auto;
+}
+
+#about-02 {
+    background-color: #f4f4f4;
+}
+
+.about-item {
+    background-color: #fff;
+    padding: 80px 30px;
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-item i {
+    font-size: 42px;
+    margin: 0;
+}
+
+.about-item h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.about-item hr {
+    width: 45px;
+    height: 3px;
+    background-color: #f4c613;
+    margin: 0 auto;
+    border: none;
+}
+
+.about-item p {
+    margin-top: 20px;
+}
+
+.about-item:hover {
+    background-color: #f4c613;
+}
+
+.about-item:hover i,
+.about-item:hover h3,
+.about-item:hover p {
+    color: #fff;
+}
+
+.about-item:hover hr {
+    background-color: #fff;
+}
+
+.about-item,
+.about-item i,
+.about-item hr {
+    -webkit-transition: all 400ms ease-in-out;
+    transition: all 400ms ease-in-out;
+}
+
+.about-item:hover i {
+    transform: translateY(-20px);
 }
