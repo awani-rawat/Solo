@@ -22,4 +22,7 @@ $(function () {
     }, {
         offset: 'bottom-in-view'
     });
+    $('#services-tabs').responsiveTabs({
+        animation: 'slide'
+    });
 });

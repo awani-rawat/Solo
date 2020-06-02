@@ -105,6 +105,19 @@ section {
     border: 1px solid #f4c613;
 }
 
+.btn-yellow {
+    background-color: #f4c613;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+.btn-yellow:hover,
+.btn-yellow:focus {
+    color: #fff;
+    background-color: #212226;
+    border: 1px solid #212226;
+}
+
 .content-box-md {
     padding: 100px 0;
 }
@@ -472,4 +485,67 @@ Others
 
 .service:hover h5 {
     color: #212226;
+}
+
+#services-02 {
+    background: #f4f4f4;
+}
+
+#services-tabs ul {
+    margin-top: 40px;
+}
+
+#services-tabs ul li {
+    padding: 5px 30px;
+}
+
+#services-tabs ul li a {
+    font-family: "Raleway", sans-serif;
+    font-size: 20px;
+    color: #212226;
+    text-transform: uppercase;
+    font-weight: 400;
+    padding: 0;
+    text-decoration: none;
+}
+
+#services-tabs ul li.r-tabs-state-active a {
+    color: #f4c613;
+    font-weight: 700;
+    border-bottom: 3px solid #f4c613;
+    padding-bottom: 5px;
+    -webkit-transition: border-color 300ms linear;
+    transition: border-color 300ms linear;
+}
+
+.service-tab .col-md-6 {
+    padding: 0;
+}
+
+.service-tab img {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.service-tab .tab-bg {
+    background: #fff;
+    padding: 59px 30px;
+    min-height: 481px;
+}
+
+.service-tab h2 {
+    font-size: 48px;
+    color: #bbb;
+    margin-bottom: 20px;
+    font-weight: 100;
+}
+
+.service-tab h3 {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.service-tab p {
+    line-height: 24px;
+    margin-bottom: 30px;
 }
