@@ -25,4 +25,21 @@ $(function () {
     $('#services-tabs').responsiveTabs({
         animation: 'slide'
     });
+    var $grid = $('#isotope-container').isotope({});
+    // filter items on button click
+    $('#isotope-filters').on('click', 'button', function () {
+        var filterValue = $(this).attr('data-filter');
+        $grid.isotope({
+            filter: filterValue
+        });
+        $('#isotope-filters').find('.active').removeClass('active');
+        $(this).addClass('active');
+    });
+    $('#portfolio-wrapper').magnificPopup({
+        delegate: 'a', // child items selector, by clicking on it popup will open
+        type: 'image',
+        gallery: {
+            enabled: true
+        }
+    });
 });
