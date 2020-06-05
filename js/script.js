@@ -42,4 +42,28 @@ $(function () {
             enabled: true
         }
     });
+    $("#testimonial-slider").owlCarousel({
+        items: 1,
+        autoplay: false,
+        smartSpeed: 700,
+        loop: true,
+        autoplayHoverPause: true,
+        nav: true,
+        dots: false,
+        navText: ['<i class="fa fa-angle-left">', '<i class="fa fa-angle-right">']
+    });
+    $('.counter').counterUp({
+        delay: 10,
+        time: 1000
+    });
+    $("#clients-slider").owlCarousel({
+        items: 6,
+        autoplay: false,
+        smartSpeed: 700,
+        loop: true,
+        autoplayHoverPause: true,
+        nav: true,
+        dots: false,
+        navText: ['<i class="fa fa-angle-left">', '<i class="fa fa-angle-right">']
+    });
 });
