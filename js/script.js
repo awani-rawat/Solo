@@ -66,4 +66,23 @@ $(function () {
         dots: false,
         navText: ['<i class="fa fa-angle-left">', '<i class="fa fa-angle-right">']
     });
+    var addressString = "1303A E 19th St, Brooklyn, NY 11230, USA";
+    var latlng = {
+        lat: 40.61,
+        lng: -73.95
+    };
+    var map = new google.maps.Map(document.getElementById('map'), {
+        center: latlng,
+        zoom: 15
+    });
+    var marker = new google.maps.Marker({
+        position: latlng,
+        map: map
+    });
+    var info = new google.maps.InfoWindow({
+        content: addressString
+    });
+    marker.addListener('click', function () {
+        info.open(map, marker);
+    })
 });
