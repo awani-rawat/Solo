@@ -1,6 +1,7 @@
 //click event in jquery is click unlike js where it is onclick
 
 $(function () {
+    showHideNav();
     $('#preloader').delay(500).fadeOut();
     $("#team-members").owlCarousel({
         items: 2,
@@ -84,5 +85,18 @@ $(function () {
     });
     marker.addListener('click', function () {
         info.open(map, marker);
-    })
+    });
+    $(window).scroll(function(){
+        showHideNav();
+    });
+
+    function showHideNav(){
+        if($(window).scrollTop()>50){
+            $('nav').addClass('white-nav-top');
+            $('.navbar-brand img').attr("src","img/logo/logo-dark.png");
+        }else{
+            $('nav').removeClass('white-nav-top');
+            $('.navbar-brand img').attr("src","img/logo/logo.png");
+        }
+    }
 });
