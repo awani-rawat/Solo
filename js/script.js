@@ -94,9 +94,19 @@ $(function () {
         if($(window).scrollTop()>50){
             $('nav').addClass('white-nav-top');
             $('.navbar-brand img').attr("src","img/logo/logo-dark.png");
+            $('#back-to-top').fadeIn();
         }else{
             $('nav').removeClass('white-nav-top');
             $('.navbar-brand img').attr("src","img/logo/logo.png");
+            $('#back-to-top').fadeOut();
         }
     }
+
+    $("a.smooth-scroll").click(function(event){
+        event.preventDefault();
+        var sectionID = $(this).attr("href");
+        $("html,body").animate({
+            scrollTop: $(sectionID).offset().top - 64
+        }, 1250, "easeInOutExpo");
+    });    
 });
