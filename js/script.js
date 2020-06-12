@@ -11,7 +11,15 @@ $(function () {
         autoplayHoverPause: true,
         nav: true,
         dots: false,
-        navText: ['<i class="fa fa-angle-left">', '<i class="fa fa-angle-right">']
+        navText: ['<i class="fa fa-angle-left">', '<i class="fa fa-angle-right">'],
+        responsive: {
+            0:{
+                items: 1
+            },
+            480:{
+                items: 2
+            }
+        }
     });
     $("#progress-elements").waypoint(function () {
         $(".progress-bar").each(function () {
