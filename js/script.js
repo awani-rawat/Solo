@@ -13,10 +13,10 @@ $(function () {
         dots: false,
         navText: ['<i class="fa fa-angle-left">', '<i class="fa fa-angle-right">'],
         responsive: {
-            0:{
+            0: {
                 items: 1
             },
-            480:{
+            480: {
                 items: 2
             }
         }
@@ -73,7 +73,18 @@ $(function () {
         autoplayHoverPause: true,
         nav: true,
         dots: false,
-        navText: ['<i class="fa fa-angle-left">', '<i class="fa fa-angle-right">']
+        navText: ['<i class="fa fa-angle-left">', '<i class="fa fa-angle-right">'],
+        responsive: {
+            0: {
+                items: 2
+            },
+            480: {
+                items: 3
+            },
+            768: {
+                items: 6
+            }
+        }
     });
     var addressString = "1303A E 19th St, Brooklyn, NY 11230, USA";
     var latlng = {
@@ -94,27 +105,27 @@ $(function () {
     marker.addListener('click', function () {
         info.open(map, marker);
     });
-    $(window).scroll(function(){
+    $(window).scroll(function () {
         showHideNav();
     });
 
-    function showHideNav(){
-        if($(window).scrollTop()>50){
+    function showHideNav() {
+        if ($(window).scrollTop() > 50) {
             $('nav').addClass('white-nav-top');
-            $('.navbar-brand img').attr("src","img/logo/logo-dark.png");
+            $('.navbar-brand img').attr("src", "img/logo/logo-dark.png");
             $('#back-to-top').fadeIn();
-        }else{
+        } else {
             $('nav').removeClass('white-nav-top');
-            $('.navbar-brand img').attr("src","img/logo/logo.png");
+            $('.navbar-brand img').attr("src", "img/logo/logo.png");
             $('#back-to-top').fadeOut();
         }
     }
 
-    $("a.smooth-scroll").click(function(event){
+    $("a.smooth-scroll").click(function (event) {
         event.preventDefault();
         var sectionID = $(this).attr("href");
         $("html,body").animate({
             scrollTop: $(sectionID).offset().top - 64
         }, 1250, "easeInOutExpo");
-    });    
+    });
 });
