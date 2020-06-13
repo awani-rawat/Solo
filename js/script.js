@@ -105,6 +105,13 @@ $(function () {
     marker.addListener('click', function () {
         info.open(map, marker);
     });
+
+    google.maps.event.addDomListener(window, 'resize', function () {
+        var center = map.getCenter();
+        google.maps.event.trigger(map, 'resize');
+        map.setCenter(center);
+    });
+
     $(window).scroll(function () {
         showHideNav();
     });
@@ -127,5 +134,13 @@ $(function () {
         $("html,body").animate({
             scrollTop: $(sectionID).offset().top - 64
         }, 1250, "easeInOutExpo");
+    });
+
+    $('#mobile-nav-open-btn').click(function () {
+        $('#mobile-nav').css("height", '100%');
+    });
+
+    $('#mobile-nav-close-btn, #mobile-nav-content a').click(function () {
+        $('#mobile-nav').css("height", '0%');
     });
 });
