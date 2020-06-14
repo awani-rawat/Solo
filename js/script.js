@@ -143,4 +143,14 @@ $(function () {
     $('#mobile-nav-close-btn, #mobile-nav-content a').click(function () {
         $('#mobile-nav').css("height", '0%');
     });
+
+    new WOW().init();
 });
+
+$(window).on('load', function () {
+    $('#home-heading-1').addClass("animated fadeInDown");
+    $('#home-heading-2').addClass("animated fadeInLeft");
+    $('#home-text').addClass("animated zoomIn");
+    $('#home-btn').addClass("animated zoomIn");
+    $('#arrow-down i').addClass("animated fadeInDown infinite");
+})

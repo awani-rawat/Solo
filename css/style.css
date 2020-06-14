@@ -1129,7 +1129,7 @@ ul.navbar-nav > li > a:focus {
     color: #f4c613;
 }
 
-.white-nav-top ul.navbar-nav>li.active>a {
+.white-nav-top ul.navbar-nav > li.active > a {
     color: #f4c613;
     font-weight: 500;
 }
@@ -1143,4 +1143,29 @@ ul.navbar-nav > li > a:focus {
     font-size: 22px;
     display: none;
     z-index: 10;
+}
+
+#home-heading-1 {
+    animation-duration: 1.5s;
+    animation-delay: 1s;
+}
+
+#home-heading-2 {
+    animation-duration: 1.5s;
+    animation-delay: 1.5s;
+}
+
+#home-text {
+    animation-duration: 1.5s;
+    animation-delay: 2s;
+}
+
+#home-btn {
+    animation-duration: 1.5s;
+    animation-delay: 2.5s;
+}
+
+#arrow-down i {
+    animation-duration: 1.5s;
+    animation-delay: 3s;
 }
