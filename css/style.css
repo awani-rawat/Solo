@@ -331,6 +331,11 @@ Others
     transform: translateY(-20px);
 }
 
+.about-item h3,
+.about-item p{
+    transition: all 400ms linear;
+}
+
 #team-left .vertical-heading {
     min-height: 160px;
 }
