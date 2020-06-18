@@ -500,6 +500,7 @@ Others
     margin: 0;
     -webkit-transition: all 400ms linear;
     transition: all 400ms linear;
+    text-align: center !important;
 }
 
 .service:hover .icon {
@@ -595,9 +596,6 @@ Others
     margin-bottom: 50px;
 }
 
-.row.no-gutters [class*=col-] {
-    padding: 0;
-}
 
 #isotope-filters {
     margin-bottom: 10px;
@@ -1091,12 +1089,8 @@ footer p span {
 }
 
 .navbar {
-    padding: 35px 0 20px 0;
+    padding: 45px 50px 20px 50px;
     transition: all 300ms linear;
-}
-
-.site-nav-wrapper {
-    padding: 0 85px;
 }
 
 .navbar-brand {
@@ -1134,7 +1128,7 @@ ul.navbar-nav > li > a:focus {
     color: #f4c613;
 }
 
-.white-nav-top ul.navbar-nav > li.active > a {
+.white-nav-top ul.navbar-nav > li > a.active {
     color: #f4c613;
     font-weight: 500;
 }
@@ -1173,4 +1167,8 @@ ul.navbar-nav > li > a:focus {
 #arrow-down i {
     animation-duration: 1.5s;
     animation-delay: 3s;
+}
+
+#google-map .row{
+    display: block !important;
 }
